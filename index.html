@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your GitHub Profile</title>
+    <style>
+        /* Base styling */
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #00FF00;
+            overflow: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .intro, .tech-stack, .footer {
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 8px;
+        }
+
+        .intro p, .tech-stack h3, .footer p {
+            font-size: 1.2rem;
+        }
+
+        .tech-stack {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .tech-stack div {
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+            background-color: #000;
+            width: 150px;
+        }
+
+        .tech-stack img {
+            width: 50px;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            font-size: 1rem;
+        }
+
+        /* Matrix Rain Animation */
+        .rain {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .rain div {
+            position: absolute;
+            width: 1px;
+            height: 20px;
+            background: rgba(0, 255, 0, 0.8);
+            animation: rain-animation 0.5s linear infinite;
+        }
+
+        /* Rain drop animation */
+        @keyframes rain-animation {
+            0% {
+                top: -20px;
+                opacity: 1;
+            }
+            100% {
+                top: 100%;
+                opacity: 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Matrix Rain -->
+<div class="rain">
+    <!-- Add divs for the raindrops (100 for example) -->
+    <div style="left: 10%; animation-duration: 0.7s;"></div>
+    <div style="left: 20%; animation-duration: 0.9s;"></div>
+    <div style="left: 30%; animation-duration: 1s;"></div>
+    <div style="left: 40%; animation-duration: 0.6s;"></div>
+    <div style="left: 50%; animation-duration: 0.8s;"></div>
+    <div style="left: 60%; animation-duration: 0.7s;"></div>
+    <div style="left: 70%; animation-duration: 0.9s;"></div>
+    <div style="left: 80%; animation-duration: 1s;"></div>
+    <div style="left: 90%; animation-duration: 0.6s;"></div>
+    <!-- Add more as needed for more rain effects -->
+</div>
+
+<header>
+    <h1>Welcome to [Your Name]'s GitHub</h1>
+    <p>Feel the Matrix flow...</p>
+</header>
+
+<section class="intro">
+    <p><strong>👷 I have worked with <strong>multiple frameworks, tools and programming languages</strong> for testing/automation projects.</p>
+    <!--
+    <p><strong>🔭 I’m currently working on:</strong> [Your Current Project or Focus]</p>
+    <p><strong>🌱 I’m currently learning:</strong> [Technologies you're learning]</p>
+    <p><strong>💬 Ask me about:</strong> [Your Expertise or Favorite Topics]</p>
+    <p><strong>📫 How to reach me:</strong> [Your Contact Information]</p>
+    <p><strong>⚡ Fun fact:</strong> [An interesting or quirky fact about you]</p>
+-->
+</section>
+
+<section class="tech-stack">
+    <!--
+    <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Logo_JavaScript.svg" alt="JavaScript">
+        <h3>JavaScript</h3>
+    </div>
+    <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg" alt="React">
+        <h3>React</h3>
+    </div>
+    <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/HTML5_logo_and_wordmark.svg" alt="HTML5">
+        <h3>HTML5</h3>
+    </div>
+    <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Node.js_logo.svg" alt="Node.js">
+        <h3>Node.js</h3>
+    </div>
+    <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Logo_MySQL.svg" alt="MySQL">
+        <h3>MySQL</h3>
+    </div>
+-->
+</section>
+
+<footer>
+    <p>Connect with me on:</p>
+    <p>
+        <a href="https://www.linkedin.com/in/abhishek-sharma-9289a965/" target="_blank">LinkedIn</a> | 
+        <a href="mailto:abhisheksharma.nith@gmail.com">Email</a>
+    </p>
+</footer>
+
+</body>
+</html>
