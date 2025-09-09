@@ -1,161 +1,205 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your GitHub Profile</title>
-    <style>
-        /* Base styling */
-        body {
-            font-family: 'Courier New', Courier, monospace;
-            margin: 0;
-            padding: 0;
-            background-color: #000;
-            color: #00FF00;
-            overflow: hidden;
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Abhishek's Github Profile</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/slide.js"></script>
+    </head>
+    <body>
+        <header class="me" id="me"> 
+            <div class="square-image-wrapper">
+                <img src="assets/images/me.png" alt="Abhishek">
+            </div>
+            <div class="name_title">
+                <h1>Abhishek Sharma</h1>
+                <h2 class="job-title-slideshow">
+                    <span class="job-title active">Senior SDET II</span>
+                    <span class="job-title">Quality Assurance Engineer</span>
+                    <span class="job-title">Automation Engineer</span>
+                    <span class="job-title">Software Engineer</span>
+                    <!-- <span class="job-title">Performance Testing Engineer</span> -->
+                    <!-- <span class="job-title">Test Engineer</span> -->
+                    <!-- <span class="job-title">Manual Testing Engineer</span> -->
+                </h2>
+            </div>  
+            <!-- Animated arrow -->
+            <div class="scroll-arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
 
-        header {
-            text-align: center;
-            padding: 20px;
-            font-size: 2rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
+        <section class="about_me">
+            <h1>About Me</h1>
+            <div class="intro">
+                <p>
+                    A <strong>Test Engineer</strong> with 7+ years of experience in backend as well as frontend testing.
+                </p>
+            </div>
+            <div class="expertise">
+                <h3>Core Expertise</h3>
+                <ul>
+                    <li>Comprehensive test strategy development and execution</li>
+                    <li>Troubleshooting and debuging critical production issues.</li>
+                    <li>Test automation framework design/enhancement and implementation</li>
+                    <li>Building automation utilities</li>
+                    <li>CI/CD pipeline integration and optimization</li>
+                    <li>Quality assurance process enhancement</li>
+                    <li>Leveraging LLMs to create/enhance test strategies and automation</li>
+                </ul>
+            </div>
+            <div class="mission">
+                <p>
+                    I strive for proactive quality engineering – identifying potential system vulnerabilities 
+                    and workflow bottlenecks before they impact production environments. My approach focuses on delivering 
+                    seamless user experiences while maintaining the highest standards of software reliability.
+                </p>
+            </div>
+        </section>
+        
+        <section class="tech-stack">
+            <h1>Tech Stack</h1>
+            <div class="marquee-container">
+                <div class="tech-stack-div">
+                    <div class="item">
+                        <img src="assets/images/perl.png" alt="Perl">
+                        <h3>Perl</h3>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/python.png" alt="Python">
+                        <h3>Python</h3>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/shell.png" alt="Shell Script">
+                        <h3>Shell</h3>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/docker.png" alt="Docker">
+                        <h3>Docker</h3>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/jenkins.png" alt="Jenkins">
+                        <h3>Jenkins</h3>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/pytest.png" alt="Pytest">
+                        <h3>Pytest</h3>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/selenium.png" alt="Selenium">
+                        <h3>Selenium</h3>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/locust.png" alt="Locust">
+                        <h3>Locust</h3>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/jmeter_square.png" alt="JMeter">
+                        <h3>JMeter</h3>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/git.png" alt="Git">
+                        <h3>Git</h3>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/spirent.png" alt="Spirent">
+                        <h3>Spirent</h3>
+                    </div>
+                    
+                    <!-- Duplicate -->
+                    <div class="item">
+                        <img src="assets/images/perl.png" alt="Perl">
+                        <h3>Perl</h3>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/python.png" alt="Python">
+                        <h3>Python</h3>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/shell.png" alt="Shell Script">
+                        <h3>Shell</h3>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/docker.png" alt="Docker">
+                        <h3>Docker</h3>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/jenkins.png" alt="Jenkins">
+                        <h3>Jenkins</h3>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/pytest.png" alt="Pytest">
+                        <h3>Pytest</h3>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/selenium.png" alt="Selenium">
+                        <h3>Selenium</h3>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/locust.png" alt="Locust">
+                        <h3>Locust</h3>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/jmeter_square.png" alt="JMeter">
+                        <h3>JMeter</h3>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/git.png" alt="Git">
+                        <h3>Git</h3>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/spirent.png" alt="Spirent">
+                        <h3>Spirent</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        .intro, .tech-stack, .footer {
-            text-align: center;
-            margin: 20px;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.7);
-            border-radius: 8px;
-        }
+        <section class="work_ex">
+            <h1>Work Experience</h1>
+            <div class="work_ex_div">
+                <div class="akamai workex_item">
+                    <strong>Akamai Technologies</strong>
+                    <span class="duration">(2022 - Present)</span>
+                    <p class="role">Senior SDET II</p>
+                </div>
+                <div class="zscaler_2 workex_item">
+                    <strong>Zscaler</strong>
+                    <span class="duration">(2019 - 2022)</span>
+                    <p class="role">Senior Software Engineer</p>
+                </div>
+                <div class="sbi workex_item">
+                    <strong>State Bank of India</strong>
+                    <span class="duration">(2017 - 2019)</span>
+                    <p class="role">Assistant Manager</p>
+                </div>
+                <div class="zscaler_1 workex_item">
+                    <strong>Zscaler</strong>
+                    <span class="duration">(2013 - 2015)</span>
+                    <p class="role">Junior Software Engineer</p>
+                </div>
+            </div>
+        </section>
 
-        .intro p, .tech-stack h3, .footer p {
-            font-size: 1.2rem;
-        }
-
-        .tech-stack {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .tech-stack div {
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
-            background-color: #000;
-            width: 150px;
-        }
-
-        .tech-stack img {
-            width: 50px;
-            margin-bottom: 10px;
-        }
-
-        .footer {
-            font-size: 1rem;
-        }
-
-        /* Matrix Rain Animation */
-        .rain {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-        }
-
-        .rain div {
-            position: absolute;
-            width: 1px;
-            height: 20px;
-            background: rgba(0, 255, 0, 0.8);
-            animation: rain-animation 0.5s linear infinite;
-        }
-
-        /* Rain drop animation */
-        @keyframes rain-animation {
-            0% {
-                top: -20px;
-                opacity: 1;
-            }
-            100% {
-                top: 100%;
-                opacity: 0;
-            }
-        }
-
-    </style>
-</head>
-<body>
-
-<!-- Matrix Rain -->
- <!--
-<div class="rain">
-    <div style="left: 10%; animation-duration: 0.7s;"></div>
-    <div style="left: 20%; animation-duration: 0.9s;"></div>
-    <div style="left: 30%; animation-duration: 1s;"></div>
-    <div style="left: 40%; animation-duration: 0.6s;"></div>
-    <div style="left: 50%; animation-duration: 0.8s;"></div>
-    <div style="left: 60%; animation-duration: 0.7s;"></div>
-    <div style="left: 70%; animation-duration: 0.9s;"></div>
-    <div style="left: 80%; animation-duration: 1s;"></div>
-    <div style="left: 90%; animation-duration: 0.6s;"></div>
-</div>
--->
-
-<header>
-    <h1>Hi, This is Abhishek Sharma</h1>
-</header>
-
-<section class="intro">
-    <p><strong>👷 I have worked with <strong>multiple frameworks, tools and programming languages</strong> for testing/automation projects.</p>
-    <!--
-    <p><strong>🔭 I’m currently working on:</strong> [Your Current Project or Focus]</p>
-    <p><strong>🌱 I’m currently learning:</strong> [Technologies you're learning]</p>
-    <p><strong>💬 Ask me about:</strong> [Your Expertise or Favorite Topics]</p>
-    <p><strong>📫 How to reach me:</strong> [Your Contact Information]</p>
-    <p><strong>⚡ Fun fact:</strong> [An interesting or quirky fact about you]</p>
--->
-</section>
-
-<section class="tech-stack">
-    <!--
-    <div>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Logo_JavaScript.svg" alt="JavaScript">
-        <h3>JavaScript</h3>
-    </div>
-    <div>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg" alt="React">
-        <h3>React</h3>
-    </div>
-    <div>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/HTML5_logo_and_wordmark.svg" alt="HTML5">
-        <h3>HTML5</h3>
-    </div>
-    <div>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Node.js_logo.svg" alt="Node.js">
-        <h3>Node.js</h3>
-    </div>
-    <div>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Logo_MySQL.svg" alt="MySQL">
-        <h3>MySQL</h3>
-    </div>
--->
-</section>
-
-<footer>
-    <p>Connect with me on:</p>
-    <p>
-        <a href="https://www.linkedin.com/in/abhishek-sharma-9289a965/" target="_blank">LinkedIn</a> | 
-        <a href="mailto:abhisheksharma.nith@gmail.com">Email</a>
-    </p>
-</footer>
-
-</body>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h3>Connect With Me</h3>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/abhishek-sharma-9289a965" target="_blank">LinkedIn</a> | 
+                        <a href="mailto:abhisheksharma.nith@gmail.com">Email</a> | 
+                        <a href="https://github.com/shar-abhi" target="_blank">GitHub</a>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <a href="assets/documents/Resume_Abhishek_sel.pdf" download class="resume-link">
+                        📄 Download Resume
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
