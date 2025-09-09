@@ -556,3 +556,320 @@ footer a:hover {
         transform: translateY(-20px);
     }
 }
+
+/* Mobile Responsive Design */
+
+/* Base responsive adjustments */
+* {
+    box-sizing: border-box;
+}
+
+/* Mobile-first approach for header */
+@media (max-width: 768px) {
+    header.me {
+        height: 100vh;
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .square-image-wrapper {
+        width: 40%;
+        top: 0;
+        margin: 20px auto;
+    }
+
+    .name_title {
+        top: 20px;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    header#me h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    header#me h2 {
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
+    .job-title-slideshow {
+        height: 1.5em;
+        text-align: center;
+    }
+
+    .scroll-arrow {
+        bottom: 30px;
+    }
+}
+
+/* About Me Section Mobile */
+@media (max-width: 768px) {
+    .about_me {
+        padding: 30px 15px;
+        text-align: center;
+    }
+
+    .about_me h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .about_me .intro {
+        margin-bottom: 25px;
+        padding: 15px;
+    }
+
+    .about_me .expertise {
+        display: block;
+        width: 100%;
+        margin-bottom: 25px;
+        padding: 15px;
+    }
+
+    .about_me .mission {
+        display: block;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .about_me .expertise h3 {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .about_me .expertise ul {
+        padding-left: 0;
+    }
+
+    .about_me .expertise li {
+        font-size: 0.95rem;
+        margin-left: 0;
+        padding-left: 20px;
+        text-align: left;
+    }
+
+    .about_me .mission p {
+        font-size: 1rem;
+        text-align: justify;
+        line-height: 1.6;
+    }
+}
+
+/* Tech Stack Mobile */
+@media (max-width: 768px) {
+    .tech-stack {
+        padding: 20px 10px;
+    }
+
+    .tech-stack h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .item {
+        min-width: 120px;
+        width: 120px;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .item img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .item h3 {
+        font-size: 0.9rem;
+        margin-top: 8px;
+    }
+}
+
+/* Work Experience Mobile */
+@media (max-width: 768px) {
+    .work_ex {
+        padding: 20px 15px;
+    }
+
+    .work_ex h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .work_ex_div {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .workex_item {
+        flex: 1 1 100%;
+        max-width: 100%;
+        min-width: auto;
+        text-align: center;
+        padding: 20px 15px;
+    }
+
+    .workex_item strong {
+        font-size: 1.1rem;
+    }
+
+    .workex_item .duration {
+        font-size: 0.85rem;
+    }
+
+    .workex_item .role {
+        font-size: 0.95rem;
+    }
+}
+
+/* Footer Mobile */
+@media (max-width: 768px) {
+    footer {
+        padding: 25px 15px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer-left,
+    .footer-right {
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer-left h3,
+    .footer-right h3 {
+        margin-bottom: 15px;
+    }
+
+    .social-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .resume-link {
+        font-size: 1rem;
+        padding: 12px 24px;
+    }
+
+    footer a {
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+    header#me h1 {
+        font-size: 28px;
+    }
+
+    header#me h2 {
+        font-size: 20px;
+    }
+
+    .square-image-wrapper {
+        width: 50%;
+    }
+
+    .about_me h1,
+    .tech-stack h1,
+    .work_ex h1 {
+        font-size: 1.8rem;
+    }
+
+    .about_me .intro p,
+    .about_me .mission p {
+        font-size: 0.95rem;
+    }
+
+    .about_me .expertise li {
+        font-size: 0.9rem;
+    }
+
+    .item {
+        min-width: 100px;
+        width: 100px;
+        padding: 8px;
+    }
+
+    .item img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .item h3 {
+        font-size: 0.8rem;
+    }
+
+    .workex_item {
+        padding: 15px 10px;
+    }
+
+    .social-links {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+/* Landscape orientation adjustments */
+@media (max-width: 768px) and (orientation: landscape) {
+    header.me {
+        height: 100vh;
+        padding: 10px;
+    }
+
+    .square-image-wrapper {
+        width: 25%;
+        margin: 10px auto;
+    }
+
+    .name_title {
+        top: 10px;
+    }
+
+    header#me h1 {
+        font-size: 32px;
+    }
+
+    header#me h2 {
+        font-size: 22px;
+    }
+
+    .scroll-arrow {
+        bottom: 20px;
+    }
+}
+
+/* Touch-friendly interactions */
+@media (hover: none) and (pointer: coarse) {
+    .workex_item:hover,
+    .square-image-wrapper img:hover,
+    footer a:hover,
+    .resume-link:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    /* Increase touch targets */
+    footer a,
+    .resume-link {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .social-links a {
+        padding: 12px 16px;
+    }
+}
